@@ -22,10 +22,9 @@ print()
 ### 1B: Create dictionary with the count of Oscar wins for each director
 win_count_dict = {}
 # Add your code here
-for y, w in winners.items():
-    w_list = []
-    w_list = [t[0] for t in winners.values()]
-    for x in w_list:
-        win_count_dict[x] = w_list.count(x)
+w_list = []
+w_list = [t[0] for t in winners.values()]
+for x in w_list:
+win_count_dict[x] = w_list.count(x)
 
 print("win_count_dict = {}".format(win_count_dict))  ##solving question 2
